@@ -1,0 +1,96 @@
+/* content */
+
+/*#tasks .with-icon .list-title {*/
+	/*padding-left:16px;*/
+/*}*/
+
+/*#tasks .with-icon .list-title span {*/
+	/*display:none;*/
+	/*margin-left:6px;*/
+/*}*/
+
+/*#tasks .with-icon .list-title:hover span {*/
+	/*display:inline;*/
+/*}*/
+
+/*#tasks .with-icon .opened span {*/
+	/*display:inline;*/
+/*}*/
+
+/*#tasks .active > a {*/
+	/*padding-right: 40px;*/
+/*}*/
+
+/*#tasks li:hover > a {*/
+	/*padding-right: 60px;*/
+/*}*/
+
+/*#tasks .add-new:hover > a {*/
+	/*padding-right: 0px;*/
+/*}*/
+
+/*#tasks .utils {*/
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*top: 0;*/
+	/*bottom: 0;*/
+/*}*/
+
+/*#tasks .utils > * {*/
+	/*float: right;*/
+/*}*/
+
+/*#tasks .utils button {*/
+	/*margin: 0;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-color: transparent;*/
+	/*border: 0;*/
+	/*box-shadow: none;*/
+	/*display: none;*/
+	/*height: 32px;*/
+	/*width: 32px;*/
+/*}*/
+
+/*#tasks li:hover > .utils button {*/
+	/*display: block;*/
+/*}*/
+
+/* only display the delete button when the feed is active */
+/*#tasks li:hover > .utils .delete-button {*/
+	/*display: none;*/
+/*}*/
+
+/*#tasks li.active > .utils .delete-button {*/
+	/*display: block;*/
+/*}*/
+
+/*#tasks li:hover > .utils {*/
+	/*display: block;*/
+/*}*/
+
+/*#tasks li:hover > .utils .tasks-counter {*/
+	/*padding-left: 0;*/
+/*}*/
+
+/*.tasks-counter {*/
+	/*padding: 8px 6px 8px 5px;*/
+	/*overflow: hidden;*/
+	/*text-overflow: ellipsis;*/
+	/*text-align: center;*/
+	/*font-size: 9pt;*/
+	/*display: none;*/
+/*}*/
+
+/*.tasks-counter {*/
+	/*display: block;*/
+/*}*/
+
+/*li:hover > .utils .delete-button {*/
+	/*display: none;*/
+/*}*/
+
+/*li.active > .utils .delete-button {*/
+	/*display: block;*/
+/*}*/
+

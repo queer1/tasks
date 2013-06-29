@@ -1,0 +1,26 @@
+{
+	"name": "tasks",
+	"description": "Tasks organizer",
+	"version": "0.0.1",
+	"private": true,
+	"homepage": "https://github.com/owncloud/tasks",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:owncloud/tasks.git"
+	},
+	"bugs": "https://github.com/owncloud/tasks/issues",
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-cli": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-watch": "*",
+		"karma": "*",
+		"grunt-karma": "*",
+		"grunt-wrap": "*",
+		"phantomjs": "*",
+		"grunt-phpunit": "*"
+	},
+	"engine": "node >= 0.8"
+}

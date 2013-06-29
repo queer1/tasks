@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+	<id>tasks</id>
+	<name>Tasks</name>
+	<description>Tasks organizer</description>
+	<licence>AGPLv3</licence>
+	<author>Thomas Müller</author>
+	<version>0.001</version>
+	<require>5.0.0</require>
+</info>

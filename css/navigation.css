@@ -1,0 +1,96 @@
+/* navigation */
+
+#app-navigation .with-icon .list-title {
+	padding-left:16px;
+}
+
+#app-navigation .with-icon .list-title span {
+	display:none;
+	margin-left:6px;
+}
+
+#app-navigation .with-icon .list-title:hover span {
+	display:inline;
+}
+
+#app-navigation .with-icon .opened span {
+	display:inline;
+}
+
+#app-navigation .active > a {
+	padding-right: 40px;
+}
+
+#app-navigation li:hover > a {
+	padding-right: 60px;
+}
+
+#app-navigation .add-new:hover > a {
+	padding-right: 0px;
+}
+
+#app-navigation .utils {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#app-navigation .utils > * {
+	float: right;
+}
+
+#app-navigation .utils button {
+	margin: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	display: none;
+	height: 32px;
+	width: 32px;
+}
+
+#app-navigation li:hover > .utils button {
+	display: block;
+}
+
+/* only display the delete button when the feed is active */
+#app-navigation li:hover > .utils .delete-button {
+	display: none;
+}
+
+#app-navigation li.active > .utils .delete-button {
+	display: block;
+}
+
+#app-navigation li:hover > .utils {
+	display: block;
+}
+
+#app-navigation li:hover > .utils .tasks-counter {
+	padding-left: 0;
+}
+
+.tasks-counter {
+	padding: 8px 6px 8px 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-size: 9pt;
+	display: none;
+}
+
+.tasks-counter {
+	display: block;
+}
+
+li:hover > .utils .delete-button {
+	display: none;
+}
+
+li.active > .utils .delete-button {
+	display: block;
+}
+
