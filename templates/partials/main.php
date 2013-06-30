@@ -23,7 +23,7 @@
 <ul class="with-icon" ng-show="id">
 	<li ng-repeat="task in getTasks()" class="task">
 		<input type="checkbox" ng-model="task.checked" />
-		<a href="#/{{task.id}}" class="title">{{task.name}}</a>
+		<span class="title">{{task.name}}</span>
 		<span class="utils">
 			<button ng-click="deleteTask(task.id)"
 					class="svg action delete-icon delete-button"

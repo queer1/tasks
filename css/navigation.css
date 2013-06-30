@@ -86,11 +86,11 @@
 	display: block;
 }
 
-li:hover > .utils .delete-button {
-	display: none;
-}
+/*li:hover > .utils .delete-button {*/
+	/*display: none;*/
+/*}*/
 
-li.active > .utils .delete-button {
-	display: block;
-}
+/*li.active > .utils .delete-button {*/
+	/*display: block;*/
+/*}*/
 
