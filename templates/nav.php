@@ -1,6 +1,6 @@
 <div id="app-navigation" ng-controller="ListController" class="ng-scope">
 
-	<ul class="with-icon">
+	<ul>
 		<?php print_unescaped($this->inc('partials/addnewlist')) ?>
 
 		<li ng-repeat="list in getTaskLists()">
