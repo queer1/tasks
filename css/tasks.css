@@ -8,7 +8,6 @@
 
 #app-content > ul {
 	height: 100%;
-	overflow: auto;
 	-moz-box-sizing: border-box; box-sizing: border-box;
 }
 #app-content li {
@@ -42,5 +41,9 @@
 	display: block;
 	height: 32px;
 	width: 32px;
+}
+
+.add-new-popup {
+	display: none;
 }
 

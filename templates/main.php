@@ -13,7 +13,6 @@
 
 \OCP\Util::addStyle('tasks', 'navigation');
 \OCP\Util::addStyle('tasks', 'tasks');
-\OCP\Util::addStyle('tasks', 'addnew');
 
 ?>
 

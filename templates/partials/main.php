@@ -1,6 +1,5 @@
 <div class="add-new"
 	 ng-show="id">
-	<fieldset class="personalblock">
 		<p class="error">
 <!--				<span ng-show="listExistsError">'Error: list already existing!'</span>-->
 		</p>
@@ -17,7 +16,6 @@
 					ng-disabled="isAddingTask() || !task.trim()"
 					ng-click="addTask(task)">Add</button>
 		</form>
-	</fieldset>
 </div>
 
 <ul class="with-icon" ng-show="id">
