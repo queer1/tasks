@@ -25,9 +25,6 @@
 
 namespace OCA\Tasks;
 
-use \OCA\AppFramework\App;
-use \OCA\Tasks\DependencyInjection\DIContainer;
-
 /** @var $this \OC_Router */
 
 /**
@@ -35,6 +32,7 @@ use \OCA\Tasks\DependencyInjection\DIContainer;
  */
 $this->create('tasks_index', '/')->get()->action(
 	function($params){
-		App::main('PageController', 'index', $params, new DIContainer());
+		$app = new TasksApp($params);
+		$app->dispatch('PageController', 'index');
 	}
 );

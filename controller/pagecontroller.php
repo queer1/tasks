@@ -25,16 +25,16 @@
 
 namespace OCA\Tasks\Controller;
 
-use \OCA\AppFramework\Controller\Controller;
-use \OCA\AppFramework\Core\API;
-use \OCA\AppFramework\Http\Request;
 
+use OCP\AppFramework\Controller;
+use OCP\AppFramework\IAppContainer;
+use OCP\IRequest;
 
 class PageController extends Controller {
 
 
-	public function __construct(API $api, Request $request){
-		parent::__construct($api, $request);
+	public function __construct(IAppContainer $app, IRequest $request){
+		parent::__construct($app, $request);
 	}
 
 
@@ -43,9 +43,8 @@ class PageController extends Controller {
 	 * The following comment turns off security checks
 	 * Please look up their meaning in the documentation!
 	 *
-	 * @IsAdminExemption
-	 * @IsSubAdminExemption
-	 * @CSRFExemption
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
 	 */
 	public function index() {
 		return $this->render('main');

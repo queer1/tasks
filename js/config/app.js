@@ -22,7 +22,7 @@
  */
 
 
-angular.module('Tasks', ['OC']).
+angular.module('Tasks', ['restangular']).
 	config(
 		['$routeProvider', '$interpolateProvider',
 		function ($routeProvider, $interpolateProvider) {

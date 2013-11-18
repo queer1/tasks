@@ -1,15 +1,11 @@
 <?php
 
-//\OCP\Util::addScript('news', 'vendor/momentjs/moment');
-//\OCP\Util::addScript('news', 'vendor/momentjs/langs');
-
-\OCP\Util::addScript('appframework', 'vendor/bootstrap/tooltip');
-\OCP\Util::addScript('appframework', 'vendor/angular/angular');
-\OCP\Util::addScript('appframework', 'public/app');
-
+\OCP\Util::addScript('tasks', 'vendor/underscore/underscore.min');
+\OCP\Util::addScript('tasks', 'vendor/angular/angular.min');
+\OCP\Util::addScript('tasks', 'vendor/restangular/restangular.min');
+//\OCP\Util::addScript('tasks', 'vendor/angular-gettext/angular-gettext.min');
 \OCP\Util::addScript('tasks', 'public/app');
 
-\OCP\Util::addStyle('appframework', 'bootstrap/tooltip');
 
 \OCP\Util::addStyle('tasks', 'navigation');
 \OCP\Util::addStyle('tasks', 'tasks');

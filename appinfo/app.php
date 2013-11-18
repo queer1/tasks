@@ -25,39 +25,14 @@
 
 namespace OCA\Tasks;
 
-use \OCA\AppFramework\Core\API;
-use OCP\App;
 use OCP\Util;
 
-
-// don't break ownCloud when the appframework or calendar is not enabled
-if (App::isEnabled('appframework') && App::isEnabled('calendar')) {
-
-	$api = new API('tasks');
-
-	$api->addNavigationEntry(array(
-
-		// the string under which your app will be referenced in ownCloud
-		'id' => $api->getAppName('tasks'),
-
-		// sorting weight for the navigation. The higher the number, the higher
-		// will it be listed in the navigation
+\OC::$server->getNavigationManager()->add(array(
+		'id' => 'tasks',
 		'order' => 10,
-
-		// the route that will be shown on startup
-		'href' => $api->linkToRoute('tasks_index'),
-
-		// the icon that will be shown in the navigation
-		// this file needs to exist in img/example.png
-		'icon' => $api->imagePath('tasks.svg'),
-
-		// the title of your application. This will be used in the
-		// navigation or on the settings page of your app
-		'name' => $api->getTrans()->t('Tasks')
-
-	));
-
-} else {
-	$msg = 'Can not enable the tasks app because App Framework or Calendar is disabled';
-	Util::writeLog('tasks', $msg, Util::ERROR);
-}
+		'href' => \OCP\Util::linkToRoute('tasks_index'),
+//		'href' => \OCP\Util::linkTo('tasks', '/'),
+		'icon' => \OCP\Util::imagePath( 'tasks', 'tasks.svg' ),
+		'name' => \OCP\Util::getL10N('tasks')->t('Tasks')
+	)
+);

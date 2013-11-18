@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('Tasks', ['OC']).
+angular.module('Tasks', ['restangular']).
 	config(
 		['$routeProvider', '$interpolateProvider',
 		function ($routeProvider, $interpolateProvider) {
@@ -17,6 +17,7 @@ angular.module('Tasks', ['OC']).
 		redirectTo: '/'
 	});
 }]);
+
 angular.module('Tasks').controller('ListController', ['$scope', function ($scope) {
 
 	var _this = this;
