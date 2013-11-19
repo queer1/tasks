@@ -29,6 +29,8 @@ angular.module('Tasks').controller('ListController', ['$scope', function ($scope
 	_this._isAddingList = false;
 	_this._taskLists = [];
 
+	_this.selectedList = null;
+
 	$scope.addTaskList = function(taskListName)
 	{
 		_this._isAddingList = true;
@@ -53,5 +55,13 @@ angular.module('Tasks').controller('ListController', ['$scope', function ($scope
 	$scope.addTaskList('Private Todos');
 	$scope.addTaskList('Business Todos');
 
+	$scope.selectTaskList = function(listId)
+	{
+		_this.selectedList = listId;
+	};
 
+	$scope.isSelected = function(listId)
+	{
+		return _this.selectedList == listId;
+	};
 }]);
