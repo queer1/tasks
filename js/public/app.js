@@ -25,6 +25,8 @@ angular.module('Tasks').controller('ListController', ['$scope', function ($scope
 	_this._isAddingList = false;
 	_this._taskLists = [];
 
+	_this.selectedList = null;
+
 	$scope.addTaskList = function(taskListName)
 	{
 		_this._isAddingList = true;
@@ -49,8 +51,17 @@ angular.module('Tasks').controller('ListController', ['$scope', function ($scope
 	$scope.addTaskList('Private Todos');
 	$scope.addTaskList('Business Todos');
 
+	$scope.selectTaskList = function(listId)
+	{
+		_this.selectedList = listId;
+	};
 
+	$scope.isSelected = function(listId)
+	{
+		return _this.selectedList == listId;
+	};
 }]);
+
 angular.module('Tasks').controller('MainController', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
 	var _this = this;
@@ -80,10 +91,17 @@ angular.module('Tasks').controller('MainController', ['$scope', '$routeParams', 
 		return _this._tasks;
 	};
 
+	$scope.deleteTask = function(taskId)
+	{
+		var result = $.grep(_this._tasks, function(e){ return e.id == taskId; });
+		_this._tasks.splice(_this._tasks.indexOf(result),1);
+	};
+
 	$scope.addTask('Read book');
 	$scope.addTask('Go diving');
 	$scope.addTask('Drink beer');
 }]);
+
 angular.module('Tasks').directive('ocClickFocus', [
 	'$timeout', function($timeout) {
 		return function(scope, elm, attr) {

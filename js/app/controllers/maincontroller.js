@@ -51,6 +51,12 @@ angular.module('Tasks').controller('MainController', ['$scope', '$routeParams', 
 		return _this._tasks;
 	};
 
+	$scope.deleteTask = function(taskId)
+	{
+		var result = $.grep(_this._tasks, function(e){ return e.id == taskId; });
+		_this._tasks.splice(_this._tasks.indexOf(result),1);
+	};
+
 	$scope.addTask('Read book');
 	$scope.addTask('Go diving');
 	$scope.addTask('Drink beer');
