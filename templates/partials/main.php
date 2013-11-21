@@ -6,12 +6,14 @@
 		<form>
 
 			<input type="text"
+				   id="taskName"
 				   ng-model="task"
 				   placeholder="Add task"
 				   ng-disabled="isAddingTask()"
 				   name="taskName"
 				   autofocus>
 			<button title="Add"
+					id="addTask"
 					class="primary"
 					ng-disabled="isAddingTask() || !task.trim()"
 					ng-click="addTask(task)">Add</button>

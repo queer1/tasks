@@ -29,13 +29,6 @@
 	padding-right: 0px;
 }
 
-#app-navigation .utils {
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-
 #app-navigation .utils > * {
 	float: right;
 }
