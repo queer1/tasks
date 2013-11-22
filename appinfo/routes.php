@@ -36,3 +36,17 @@ $this->create('tasks_index', '/')->get()->action(
 		$app->dispatch('PageController', 'index');
 	}
 );
+
+/**
+ * RESTful resources
+ */
+
+$routes = array(
+	'resources' => array(
+		'lists' => array('url' => '/tasklists'),
+		'tasks' => array('url' => '/tasklists/{listId}/tasks')
+	)
+);
+
+$a = new TasksApp();
+$a->registerRoutes($this, $routes);

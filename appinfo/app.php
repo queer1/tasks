@@ -25,14 +25,5 @@
 
 namespace OCA\Tasks;
 
-use OCP\Util;
-
-\OC::$server->getNavigationManager()->add(array(
-		'id' => 'tasks',
-		'order' => 10,
-		'href' => \OCP\Util::linkToRoute('tasks_index'),
-//		'href' => \OCP\Util::linkTo('tasks', '/'),
-		'icon' => \OCP\Util::imagePath( 'tasks', 'tasks.svg' ),
-		'name' => \OCP\Util::getL10N('tasks')->t('Tasks')
-	)
-);
+$app = new TasksApp();
+$app->registerNavigation();
